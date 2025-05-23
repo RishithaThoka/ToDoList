@@ -1,0 +1,164 @@
+/* Reset default styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling with a colorful gradient background */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #9affad, #fad0c4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container with a modern card-like design */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 600px;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+/* Heading with a vibrant color */
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #ff4b5c;
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Input section with flex layout */
+.input-section {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+/* Stylish input field */
+#taskInput {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #6c63ff;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#taskInput:focus {
+    outline: none;
+    border-color: #ff6f61;
+    box-shadow: 0 0 8px rgba(255, 111, 97, 0.3);
+}
+
+/* Add button with a vibrant gradient */
+button {
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #abff61, #ffb88c);
+    color: rgb(11, 10, 10);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Task list styling */
+ul {
+    list-style: none;
+}
+
+/* Individual task styling with animation */
+li {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border-left: 5px solid #6c63ff;
+    transition: background 0.3s ease;
+}
+
+li:hover {
+    background: #f1f1f1;
+}
+
+/* Completed task styling */
+li.completed span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Task text */
+li span {
+    flex: 1;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Checkbox styling */
+li input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    accent-color: #ff6f61;
+}
+
+/* Delete button with a distinct color */
+li button {
+    background: linear-gradient(45deg, #ff4b5c, #ff7675);
+    padding: 8px 15px;
+    margin-left: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 400px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .input-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    li {
+        padding: 12px;
+    }
+
+    #taskInput {
+        font-size: 1rem;
+    }
+}
+
+/* Import Poppins font for modern typography */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
