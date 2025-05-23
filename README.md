@@ -12,15 +12,15 @@ A colorful To-Do List app built with HTML, CSS, and JS. Add, complete, or delete
 - JavaScript (ES6, DOM manipulation)
 - No external frameworks
 # Folder Structure
-todo-list/
+ToDoList/
 - ├── index.html
 - ├── style.css
 - └── script.js
 # Setup Instructions
 - Clone the Repository:
-  - git clone https://github.com/<your-username>/todo-list.git
+  - git clone https://github.com/RishithaThoka/ToDoList
 - Navigate to the Folder:
-  - cd todo-list
+  - cd ToDoList
 - Run the App:
   - Open index.html in a browser (e.g., Chrome, Firefox).
   - Or use VS Code's "Live Server" extension: right-click index.html > "Open with Live Server".
